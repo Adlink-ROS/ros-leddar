@@ -1,6 +1,6 @@
 <launch>
   <!-- Read arguments -->
-  <arg name="serial" doc="Serial number of the device to connect to"/>
+  <arg name="serial" default="/dev/ttyACM0" doc="Serial number of the device to connect to"/>
   <arg name="type" default="USB" doc="Connection type: either SERIAL or USB"/>
   <arg name="frame" default="leddar" doc="TF frame for messages header"/>
   <arg name="fov" default="45.0" doc="Field of view of device in degrees"/>
